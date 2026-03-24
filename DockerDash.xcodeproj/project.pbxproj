@@ -41,6 +41,7 @@
 		AA0020 /* ResourceMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0022; };
 		AA0021 /* LogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0023; };
 		AA0022 /* PortMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0024; };
+		AA0023 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0025; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		BB0022 /* ResourceMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceMonitorView.swift; sourceTree = "<group>"; };
 		BB0023 /* LogSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSearchView.swift; sourceTree = "<group>"; };
 		BB0024 /* PortMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortMapView.swift; sourceTree = "<group>"; };
+		BB0025 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		CC0001 /* DockerDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockerDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,7 +107,7 @@
 		EE0010 = { isa = PBXGroup; children = (BB0019); path = Compose; sourceTree = "<group>"; };
 		EE0011 = { isa = PBXGroup; children = (BB001A); path = Settings; sourceTree = "<group>"; };
 		EE0012 = { isa = PBXGroup; children = (BB001B); path = CommandPalette; sourceTree = "<group>"; };
-		EE0013 = { isa = PBXGroup; children = (BB001C); path = Shared; sourceTree = "<group>"; };
+		EE0013 = { isa = PBXGroup; children = (BB001C, BB0025); path = Shared; sourceTree = "<group>"; };
 		EE0014 = { isa = PBXGroup; children = (BB001D); path = Resources; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -152,7 +154,7 @@
 				AA0001, AA0002, AA0003, AA0004, AA0005, AA0006, AA0007, AA0008, AA0009, AA000A,
 				AA000B, AA000C, AA000D, AA000E, AA000F, AA0010, AA0011, AA0012, AA0013, AA0014,
 				AA0015, AA0016, AA0017, AA0018, AA0019, AA001A, AA001B, AA001C,
-				AA001E, AA001F, AA0020, AA0021, AA0022,
+				AA001E, AA001F, AA0020, AA0021, AA0022, AA0023,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
