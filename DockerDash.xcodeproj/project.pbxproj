@@ -1,0 +1,164 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001 /* DockerDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001; };
+		AA0002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0002; };
+		AA0003 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0003; };
+		AA0004 /* DockerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0004; };
+		AA0005 /* DockerAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0005; };
+		AA0006 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0006; };
+		AA0007 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0007; };
+		AA0008 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0008; };
+		AA0009 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0009; };
+		AA000A /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000A; };
+		AA000B /* ContainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000B; };
+		AA000C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000C; };
+		AA000D /* VolumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000D; };
+		AA000E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000E; };
+		AA000F /* SystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000F; };
+		AA0010 /* PollingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0010; };
+		AA0011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0011; };
+		AA0012 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0012; };
+		AA0013 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0013; };
+		AA0014 /* ContainerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0014; };
+		AA0015 /* ContainerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0015; };
+		AA0016 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0016; };
+		AA0017 /* VolumeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0017; };
+		AA0018 /* NetworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0018; };
+		AA0019 /* ComposeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0019; };
+		AA001A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB001A; };
+		AA001B /* CommandPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB001B; };
+		AA001C /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB001C; };
+		AA001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB001D; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0001 /* DockerDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockerDashApp.swift; sourceTree = "<group>"; };
+		BB0002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BB0003 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB0004 /* DockerAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockerAPIClient.swift; sourceTree = "<group>"; };
+		BB0005 /* DockerAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockerAPIError.swift; sourceTree = "<group>"; };
+		BB0006 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		BB0007 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BB0008 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		BB0009 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BB000A /* SystemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
+		BB000B /* ContainerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerService.swift; sourceTree = "<group>"; };
+		BB000C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		BB000D /* VolumeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeService.swift; sourceTree = "<group>"; };
+		BB000E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BB000F /* SystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemService.swift; sourceTree = "<group>"; };
+		BB0010 /* PollingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingManager.swift; sourceTree = "<group>"; };
+		BB0011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0012 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		BB0013 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BB0014 /* ContainerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerListView.swift; sourceTree = "<group>"; };
+		BB0015 /* ContainerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerDetailView.swift; sourceTree = "<group>"; };
+		BB0016 /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		BB0017 /* VolumeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeListView.swift; sourceTree = "<group>"; };
+		BB0018 /* NetworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkListView.swift; sourceTree = "<group>"; };
+		BB0019 /* ComposeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeListView.swift; sourceTree = "<group>"; };
+		BB001A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB001B /* CommandPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPaletteView.swift; sourceTree = "<group>"; };
+		BB001C /* SharedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViews.swift; sourceTree = "<group>"; };
+		BB001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB001E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB001F /* DockerDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DockerDash.entitlements; sourceTree = "<group>"; };
+		CC0001 /* DockerDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockerDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0001 = { isa = PBXGroup; children = (EE0002, EE0099); sourceTree = "<group>"; };
+		EE0099 = { isa = PBXGroup; children = (CC0001); name = Products; sourceTree = "<group>"; };
+		EE0002 = { isa = PBXGroup; children = (EE0003, EE0004, EE0005, EE0006, EE0007, EE0014, BB001E, BB001F); path = DockerDash; sourceTree = "<group>"; };
+		EE0003 = { isa = PBXGroup; children = (BB0001, BB0002, BB0003); path = App; sourceTree = "<group>"; };
+		EE0004 = { isa = PBXGroup; children = (BB0004, BB0005); path = Networking; sourceTree = "<group>"; };
+		EE0005 = { isa = PBXGroup; children = (BB0006, BB0007, BB0008, BB0009, BB000A); path = Models; sourceTree = "<group>"; };
+		EE0006 = { isa = PBXGroup; children = (BB000B, BB000C, BB000D, BB000E, BB000F, BB0010); path = Services; sourceTree = "<group>"; };
+		EE0007 = { isa = PBXGroup; children = (BB0011, EE000A, EE000B, EE000C, EE000D, EE000E, EE000F, EE0010, EE0011, EE0012, EE0013); path = Views; sourceTree = "<group>"; };
+		EE000A = { isa = PBXGroup; children = (BB0012); path = Sidebar; sourceTree = "<group>"; };
+		EE000B = { isa = PBXGroup; children = (BB0013); path = Dashboard; sourceTree = "<group>"; };
+		EE000C = { isa = PBXGroup; children = (BB0014, BB0015); path = Containers; sourceTree = "<group>"; };
+		EE000D = { isa = PBXGroup; children = (BB0016); path = Images; sourceTree = "<group>"; };
+		EE000E = { isa = PBXGroup; children = (BB0017); path = Volumes; sourceTree = "<group>"; };
+		EE000F = { isa = PBXGroup; children = (BB0018); path = Networks; sourceTree = "<group>"; };
+		EE0010 = { isa = PBXGroup; children = (BB0019); path = Compose; sourceTree = "<group>"; };
+		EE0011 = { isa = PBXGroup; children = (BB001A); path = Settings; sourceTree = "<group>"; };
+		EE0012 = { isa = PBXGroup; children = (BB001B); path = CommandPalette; sourceTree = "<group>"; };
+		EE0013 = { isa = PBXGroup; children = (BB001C); path = Shared; sourceTree = "<group>"; };
+		EE0014 = { isa = PBXGroup; children = (BB001D); path = Resources; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF0001 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0004;
+			buildPhases = (FF0002, DD0001, FF0003);
+			buildRules = ();
+			dependencies = ();
+			name = DockerDash;
+			productName = DockerDash;
+			productReference = CC0001;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF0005 = {
+			isa = PBXProject;
+			attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = { FF0001 = { CreatedOnToolsVersion = 15.0; }; }; };
+			buildConfigurationList = FF0008;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = EE0001;
+			productRefGroup = EE0099;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (FF0001);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF0003 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (AA001D); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF0002 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001, AA0002, AA0003, AA0004, AA0005, AA0006, AA0007, AA0008, AA0009, AA000A,
+				AA000B, AA000C, AA000D, AA000E, AA000F, AA0010, AA0011, AA0012, AA0013, AA0014,
+				AA0015, AA0016, AA0017, AA0018, AA0019, AA001A, AA001B, AA001C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF0006 = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)"); MACOSX_DEPLOYMENT_TARGET = 14.0; MTL_FAST_MATH = YES; ONLY_ACTIVE_ARCH = YES; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		FF0007 = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; MACOSX_DEPLOYMENT_TARGET = 14.0; MTL_FAST_MATH = YES; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; }; name = Release; };
+		FF0009 = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = DockerDash/DockerDash.entitlements; CODE_SIGN_STYLE = Automatic; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = DockerDash/Info.plist; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools"; INFOPLIST_KEY_NSPrincipalClass = NSApplication; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks"); MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.dockerdash.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; }; name = Debug; };
+		FF000A = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = DockerDash/DockerDash.entitlements; CODE_SIGN_STYLE = Automatic; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = DockerDash/Info.plist; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools"; INFOPLIST_KEY_NSPrincipalClass = NSApplication; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks"); MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.dockerdash.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0008 = { isa = XCConfigurationList; buildConfigurations = (FF0006, FF0007); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FF0004 = { isa = XCConfigurationList; buildConfigurations = (FF0009, FF000A); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = FF0005;
+}
