@@ -32,30 +32,32 @@ struct MainView: View {
 
         NavigationSplitView {
             SidebarView()
-                .navigationSplitViewColumnWidth(min: 180, ideal: 220, max: 260)
+                .navigationSplitViewColumnWidth(min: 200, ideal: 230, max: 280)
         } detail: {
             switch appState.selectedSection {
-            case .dashboard: DashboardView()
+            case .dashboard:  DashboardView()
             case .containers: ContainerListView()
-            case .images: ImageListView()
-            case .volumes: VolumeListView()
-            case .networks: NetworkListView()
-            case .ports: PortMapView()
-            case .compose: ComposeListView()
-            case .cleanup: CleanupWizardInlineView()
-            case .settings: SettingsView()
+            case .images:     ImageListView()
+            case .volumes:    VolumeListView()
+            case .networks:   NetworkListView()
+            case .ports:      PortMapView()
+            case .compose:    ComposeListView()
+            case .cleanup:    CleanupWizardInlineView()
+            case .settings:   SettingsView()
             }
         }
-        .frame(minWidth: 1000, minHeight: 700)
+        .frame(minWidth: 1060, minHeight: 720)
         .toolbar {
             ToolbarItemGroup(placement: .primaryAction) {
                 Button(action: { appState.showQuickRun = true }) {
                     Label("Quick Run", systemImage: "play.circle")
-                }.help("Run a container")
+                }
+                .help("Run a container")
 
                 Button(action: { appState.showCommandPalette = true }) {
-                    Label("⌘K", systemImage: "command")
-                }.help("Command Palette")
+                    Label("Command Palette", systemImage: "command")
+                }
+                .help("Command Palette")
                 .keyboardShortcut("k", modifiers: .command)
             }
         }
@@ -70,11 +72,16 @@ struct MainView: View {
 
 struct CleanupWizardInlineView: View {
     @State private var showWizard = false
+
     var body: some View {
-        VStack {
-            EmptyStateView(title: "Docker Cleanup", subtitle: "Remove unused resources to free disk space.", systemImage: "trash.circle")
-            Button("Start Cleanup Wizard") { showWizard = true }
-                .buttonStyle(.borderedProminent).controlSize(.large)
+        VStack(spacing: DDTokens.space20) {
+            DDEmptyState(
+                icon: "trash.circle",
+                title: "Docker Cleanup",
+                subtitle: "Remove unused containers, images, volumes, and networks to free disk space.",
+                actionTitle: "Start Cleanup Wizard",
+                action: { showWizard = true }
+            )
         }
         .sheet(isPresented: $showWizard) { CleanupWizardView() }
     }
