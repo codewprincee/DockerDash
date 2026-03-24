@@ -34,19 +34,31 @@ struct ContainerDetailView: View {
 
             Picker("", selection: $selectedTab) {
                 Text("Logs").tag(0)
-                Text("Info").tag(1)
-                Text("Environment").tag(2)
-                Text("Mounts").tag(3)
+                Text("Stats").tag(1)
+                Text("Info").tag(2)
+                Text("Labels").tag(3)
+                Text("Mounts").tag(4)
             }
             .pickerStyle(.segmented)
             .padding(.horizontal)
             .padding(.vertical, 6)
 
             switch selectedTab {
-            case 0: logsView
-            case 1: infoView
-            case 2: envView
-            case 3: mountsView
+            case 0:
+                if container.isRunning {
+                    LogSearchView(containerId: container.id, containerName: container.displayName)
+                } else {
+                    logsView
+                }
+            case 1:
+                if container.isRunning {
+                    ResourceMonitorView(containerId: container.id, containerName: container.displayName)
+                } else {
+                    EmptyStateView(title: "Container Stopped", subtitle: "Start the container to see live stats.", systemImage: "chart.line.uptrend.xyaxis")
+                }
+            case 2: infoView
+            case 3: envView
+            case 4: mountsView
             default: EmptyView()
             }
         }

@@ -36,6 +36,11 @@
 		AA001B /* CommandPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB001B; };
 		AA001C /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB001C; };
 		AA001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB001D; };
+		AA001E /* CleanupWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0020; };
+		AA001F /* QuickRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0021; };
+		AA0020 /* ResourceMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0022; };
+		AA0021 /* LogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0023; };
+		AA0022 /* PortMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0024; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,11 @@
 		BB001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB001E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB001F /* DockerDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DockerDash.entitlements; sourceTree = "<group>"; };
+		BB0020 /* CleanupWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupWizardView.swift; sourceTree = "<group>"; };
+		BB0021 /* QuickRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRunView.swift; sourceTree = "<group>"; };
+		BB0022 /* ResourceMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceMonitorView.swift; sourceTree = "<group>"; };
+		BB0023 /* LogSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSearchView.swift; sourceTree = "<group>"; };
+		BB0024 /* PortMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortMapView.swift; sourceTree = "<group>"; };
 		CC0001 /* DockerDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockerDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,7 +98,7 @@
 		EE0007 = { isa = PBXGroup; children = (BB0011, EE000A, EE000B, EE000C, EE000D, EE000E, EE000F, EE0010, EE0011, EE0012, EE0013); path = Views; sourceTree = "<group>"; };
 		EE000A = { isa = PBXGroup; children = (BB0012); path = Sidebar; sourceTree = "<group>"; };
 		EE000B = { isa = PBXGroup; children = (BB0013); path = Dashboard; sourceTree = "<group>"; };
-		EE000C = { isa = PBXGroup; children = (BB0014, BB0015); path = Containers; sourceTree = "<group>"; };
+		EE000C = { isa = PBXGroup; children = (BB0014, BB0015, BB0020, BB0021, BB0022, BB0023, BB0024); path = Containers; sourceTree = "<group>"; };
 		EE000D = { isa = PBXGroup; children = (BB0016); path = Images; sourceTree = "<group>"; };
 		EE000E = { isa = PBXGroup; children = (BB0017); path = Volumes; sourceTree = "<group>"; };
 		EE000F = { isa = PBXGroup; children = (BB0018); path = Networks; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 				AA0001, AA0002, AA0003, AA0004, AA0005, AA0006, AA0007, AA0008, AA0009, AA000A,
 				AA000B, AA000C, AA000D, AA000E, AA000F, AA0010, AA0011, AA0012, AA0013, AA0014,
 				AA0015, AA0016, AA0017, AA0018, AA0019, AA001A, AA001B, AA001C,
+				AA001E, AA001F, AA0020, AA0021, AA0022,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
